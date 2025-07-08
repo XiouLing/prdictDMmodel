@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score,classification_report,confusion_matrix
 from itertools import combinations
 from scipy.stats import pearsonr
-df=pd.read_csv('C:/DATA/Pima Indians Diabetes Dataset.csv')
+#df=pd.read_csv('C:/DATA/Pima Indians Diabetes Dataset.csv')
 pd.set_option('display.max_columns',100)#因欄位過多，無法完整呈現，故增加此程式碼，以完整呈現
 print("描述性統計",df.describe())
 x=df.drop('Outcome',axis=1)#x自變項不應包含y依變項
